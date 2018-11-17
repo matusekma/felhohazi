@@ -1,29 +1,31 @@
 {
-  "name": "nodehazi",
+  "name": "felhohazi",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/matusekma/nodehazi.git"
-  },
-  "author": "Marton Matusek",
-  "license": "Beerware",
-  "bugs": {
-    "url": "https://github.com/matusekma/nodehazi/issues"
-  },
-  "homepage": "https://github.com/matusekma/nodehazi#readme",
+  "description": "Felho alapu szoftverfejlesztes hazi",
+  "main": "server.js",
   "dependencies": {
+    "gulp": "^3.9.1",
     "bcrypt": "^3.0.2",
     "body-parser": "^1.18.3",
     "ejs": "^2.6.1",
     "express": "^4.16.4",
     "express-session": "^1.15.6",
     "mongoose": "^5.3.6",
-    "multer": "^1.4.1",
-    "npm": "^6.4.1"
-  }
+    "multer": "^1.4.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/matusekma/felhohazi.git"
+  },
+  "author": "matusekma",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/matusekma/felhohazi/issues"
+  },
+  "homepage": "https://github.com/matusekma/felhohazi#readme"
 }
