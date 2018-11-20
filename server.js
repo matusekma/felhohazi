@@ -44,4 +44,4 @@ app.use(function(err, req, res, next) {
   console.error(err.stack);
 });
 
-const server = app.listen(process.env.PORT || 8443, function() {});
+const server = app.listen(process.env.PORT || 1337, function() {});
