@@ -28,7 +28,7 @@ module.exports = function(objrepo) {
         }
 
         if (
-          crypto.createHmac("sha256", req.body.password) === result.password
+          crypto.createHmac("sha256", req.body.password).digest('hex') !== result.password
         ) {
           res.locals.error.push("Incorrect password!");
           return next();

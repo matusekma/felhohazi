@@ -42,7 +42,7 @@ module.exports = function(objrepo) {
         user.name = req.body.name;
         user.email = req.body.email;
 
-        const hash = crypto.createHmac("sha256", req.body.password);
+        const hash = crypto.createHmac("sha256", req.body.password).digest('hex');
         user.password = hash;
         user.save(function(err) {
           //redirect to /login
